@@ -28,5 +28,14 @@ describe('clean-dir', function () {
     });
   });
 
+  it('should do nothing if directory is already clean', function (done) {
+    fs.mkdirSync('.tmp2');
+    cleanDir('.tmp2', function () {
+      assert(true, 'Does not throw errors');
+      fs.rmdirSync('.tmp2');
+      done();
+    });
+  });
+
 });
 
