@@ -20,10 +20,12 @@ describe('clean-dir', function () {
     fs.rmdirSync('.tmp');
   });
 
-  it('should clean a directory from all files on it', function () {
+  it('should clean a directory', function (done) {
     assert.equal(fs.readdirSync('.tmp').length, 3);
-    cleanDir();
-    assert.equal(fs.readdirSync('.tmp').length, 0);
+    cleanDir('.tmp', function () {
+      assert.equal(fs.readdirSync('.tmp').length, 0);
+      done();
+    });
   });
 
 });
