@@ -59,5 +59,7 @@ module.exports = function (grunt) {
 
   grunt.registerTask('test', ['jshint', 'mochacli']);
 
+  grunt.registerTask('release', ['test', 'sg_release']);
+
   grunt.registerTask('default', ['menu']);
 };
