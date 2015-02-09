@@ -24,7 +24,7 @@ $ npm install -g clean-dir
 Cleans up the current working directory:
 
 ```sh
-$ cleandir --help
+$ cleandir
 ```
 
 Cleans a given directory:
@@ -45,7 +45,7 @@ $ cleandir --help
 ```js
 var cleandir = require('clean-dir');
 
-cleandir('~/path-to-clean');
+cleandir('~/path-to-clean', function (err) {});
 ```
 
 
