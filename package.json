@@ -1,0 +1,54 @@
+{
+  "name": "clean-dir",
+  "version": "0.0.0",
+  "description": "Command line util to clean a directory.",
+  "homepage": "https://github.com/ruyadorno/clean-dir",
+  "author": {
+    "name": "Ruy Adorno",
+    "url": "http://ruyadorno.com"
+  },
+  "repository": "ruyadorno/clean-dir",
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "clean-dir",
+    "cleandir",
+    "clean",
+    "directory",
+    "util",
+    "cli-app",
+    "trash",
+    "cli",
+    "bin",
+    "shell",
+    "script",
+    "rm",
+    "remove",
+    "delete",
+    "file",
+    "files",
+    "dir"
+  ],
+  "dependencies": {
+    "meow": "^3.0.0"
+  },
+  "devDependencies": {
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.4.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^1.0.0",
+    "time-grunt": "^1.0.0",
+    "grunt-mocha-cli": "^1.11.0",
+    "jshint-stylish": "^1.0.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "bin": {
+    "cleandir": "cli.js"
+  }
+}
