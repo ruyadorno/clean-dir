@@ -24,28 +24,28 @@ $ npm install -g clean-dir
 Cleans up the current working directory:
 
 ```sh
-$ clean-dir --help
+$ cleandir --help
 ```
 
 Cleans a given directory:
 
 ```sh
-$ clean-dir ~/path-to-clean
+$ cleandir ~/path-to-clean
 ```
 
 Displays the help message:
 
 ```sh
-$ clean-dir --help
+$ cleandir --help
 ```
 
 
 ### Programmatic API
 
 ```js
-var clean-dir = require('clean-dir');
+var cleandir = require('clean-dir');
 
-clean-dir('~/path-to-clean');
+cleandir('~/path-to-clean');
 ```
 
 
