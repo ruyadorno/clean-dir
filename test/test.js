@@ -21,9 +21,9 @@ describe('clean-dir', function () {
   });
 
   it('should clean a directory from all files on it', function () {
-    assert(fs.readdirSync('.tmp').length, 3);
+    assert.equal(fs.readdirSync('.tmp').length, 3);
     cleanDir();
-    assert(fs.readdirSync('.tmp').length, 0);
+    assert.equal(fs.readdirSync('.tmp').length, 0);
   });
 
 });
