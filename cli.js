@@ -8,10 +8,11 @@ var cleanDir = require('./');
 var cli = meow({
   help: [
     'Usage',
-    '  cleandir <input>',
+    '  cleandir           Removes all files from the current folder.',
+    '  cleandir <path>    Removes all files from specified dir path.',
     '',
     'Example',
-    '  cleandir Unicorn'
+    '  cleandir'
   ].join('\n')
 });
 
