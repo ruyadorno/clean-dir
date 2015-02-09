@@ -41,8 +41,23 @@ module.exports = function (grunt) {
         files: '<%= jshint.test.src %>',
         tasks: ['jshint:test', 'mochacli']
       }
+    },
+    sg_release: {
+      options: {
+        skipBowerInstall: true,
+        developBranch: 'develop',
+        masterBranch: 'master',
+        files: [
+          'package.json'
+        ],
+        commitMessage: 'Release v%VERSION%',
+        commitFiles: ['-a'], // '-a' for all files
+        pushTo: 'origin'
+      }
     }
   });
 
-  grunt.registerTask('default', ['jshint', 'mochacli']);
+  grunt.registerTask('test', ['jshint', 'mochacli']);
+
+  grunt.registerTask('default', ['menu']);
 };
