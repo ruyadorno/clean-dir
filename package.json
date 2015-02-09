@@ -1,7 +1,7 @@
 {
   "name": "clean-dir",
   "version": "0.0.0",
-  "description": "Command line util to clean a directory.",
+  "description": "Command line util to safely clean a directory",
   "homepage": "https://github.com/ruyadorno/clean-dir",
   "author": {
     "name": "Ruy Adorno",

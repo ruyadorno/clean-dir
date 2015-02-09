@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
-> Command line util to clean a directory.
+> Command line util to safely clean a directory
 
 
 ## About
