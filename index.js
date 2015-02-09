@@ -13,7 +13,11 @@ module.exports = function (dir, callback) {
   waterfall([
     function (cb) { readdir(dir, cb); },
     function (files, cb) {
-      trash(files.map(function (file) { return pathJoin(dir, file); }), cb);
+      if (files.length === 0) {
+        cb();
+      } else {
+        trash(files.map(function (file) { return pathJoin(dir, file); }), cb);
+      }
     }
   ], callback);
 
