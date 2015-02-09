@@ -1,37 +1,61 @@
-#  [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-url]][daviddm-image]
+# cleandir
+
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]
 
 > Command line util to clean a directory.
+
+
+## About
+
+This small command line tool uses [trash][trash-url] to safely clean the current working directory or the directory specified.
 
 
 ## Install
 
 ```sh
-$ npm install --save clean-dir
+$ npm install -g clean-dir
 ```
 
 
 ## Usage
 
+### Command-line
+
+Cleans up the current working directory:
+
+```sh
+$ clean-dir --help
+```
+
+Cleans a given directory:
+
+```sh
+$ clean-dir ~/path-to-clean
+```
+
+Displays the help message:
+
+```sh
+$ clean-dir --help
+```
+
+
+### Programmatic API
+
 ```js
 var clean-dir = require('clean-dir');
 
-clean-dir('Rainbow');
-```
-
-```sh
-$ npm install --global clean-dir
-$ clean-dir --help
+clean-dir('~/path-to-clean');
 ```
 
 
 ## License
 
-MIT © [Ruy Adorno]()
-
+MIT © [Ruy Adorno](http://ruyadorno.com/)
 
 [npm-url]: https://npmjs.org/package/clean-dir
 [npm-image]: https://badge.fury.io/js/clean-dir.svg
 [travis-url]: https://travis-ci.org/ruyadorno/clean-dir
 [travis-image]: https://travis-ci.org/ruyadorno/clean-dir.svg?branch=master
-[daviddm-url]: https://david-dm.org/ruyadorno/clean-dir.svg?theme=shields.io
-[daviddm-image]: https://david-dm.org/ruyadorno/clean-dir
+[trash-url]: https://www.npmjs.com/package/trash
+
