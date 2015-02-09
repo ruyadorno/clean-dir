@@ -33,7 +33,9 @@
     "dir"
   ],
   "dependencies": {
-    "meow": "^3.0.0"
+    "async": "^0.9.0",
+    "meow": "^3.0.0",
+    "trash": "^1.4.0"
   },
   "devDependencies": {
     "grunt-cli": "^0.1.13",
